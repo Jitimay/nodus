@@ -1,5 +1,5 @@
 // ============================================
-// Godus AI — ESP32 LilyGO TTGO T-Call
+// Nodus AI — ESP32 LilyGO TTGO T-Call
 // SMS via SIM800H  +  Internet via WiFi
 // Server: Andasy.io Python (FastAPI)
 // ============================================
@@ -194,7 +194,7 @@ void processCommand(String sender, String msg) {
   lower.toLowerCase();
 
   if (lower == "help" || lower == "?" || lower == "aide" || lower == "ubufasha") {
-    sendSMS(sender, "Godus AI: Ohereza ikibazo mu Kirundi, Igifaransa, Icongereza cyangwa Swahili. Andika STOP guhagarika.");
+    sendSMS(sender, "Nodus AI: Ohereza ikibazo mu Kirundi, Igifaransa, Icongereza cyangwa Swahili. Andika STOP guhagarika.");
     return;
   }
   if (lower == "stop") {
@@ -256,7 +256,7 @@ void setup() {
   Serial.begin(115200);
   delay(200);
   Serial.println("\n====================================");
-  Serial.println("   Godus AI — WiFi + SMS Bridge");
+  Serial.println("   Nodus AI — WiFi + SMS Bridge");
   Serial.println("====================================\n");
   connectWiFi();
   initModem();
